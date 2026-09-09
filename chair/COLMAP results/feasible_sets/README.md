@@ -6,7 +6,7 @@ Per-landmark computation of
 
 with the cameras held fixed at their COLMAP estimates.
 
-Code lives in `../slue/`.
+Code lives in `../python-codes/`.
 
 ## Files
 
@@ -18,15 +18,21 @@ Code lives in `../slue/`.
 | `validation_eps1.json` | brute force vs. exact-polytope LP, per landmark |
 | `feasible_sets_eps1.png` | each `F_k` in its own PCA frame, true aspect ratio |
 | `spread_vs_views_eps1.png` | `s_tilde` vs. track length |
-| `slue_feasible_set_diagram.svg/.png` | labelled theory figure; panel A is generated 3D geometry (`../slue/gen_panelA.py`), spliced in by `../slue/assemble_diagram.py` |
+| `sets_eps1_all.csv` | **main table** — all 26 545 landmarks: volume, diameter, OBB sides, anisotropy, fill ratio, normalised spreads (`../python-codes/analyse_sets.py`) |
+| `sets_overview_eps1_all.png` | six-panel overview: size/shape vs. track length, spread histogram, error-vs-extent, empty fraction |
+| `diameter_vs_views_eps1_all.png` | diameter vs. track length with inter-quartile band |
+| `slue_feasible_set_diagram.svg/.png` | labelled theory figure; panel A is generated 3D geometry (`../python-codes/gen_panelA.py`), spliced in by `../python-codes/assemble_diagram.py` |
 
 ## Reproducing
 
-    cd "../slue"
+    cd "../python-codes"
     python residual_stats.py                       # epsilon selection evidence
     python feasible_set.py --eps 1.0 --n-per-bin 3 # 15 landmarks, ~4 s
     python validate_and_plot.py eps1               # validation + figures
     python assemble_diagram.py                     # rebuild the theory figure
+
+    python analyse_sets.py --eps 1.0 --n 0         # exact LP, all 26545 pts, ~90 s
+    python plot_sets.py eps1_all                   # overview + diameter plots
 
     python feasible_set.py --eps 1.0 --ids 8246 17861 --tag mypick
 
