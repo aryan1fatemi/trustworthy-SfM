@@ -8,7 +8,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from feasible_set import OUTDIR
+import feasible_set as _fs
+OUTDIR = _fs.OUTDIR
 
 BLUE, ORANGE, GREEN, GREY = "#2b6cb0", "#c05621", "#2f855a", "#718096"
 
@@ -34,8 +35,13 @@ def trend(x, y, bins):
     return np.array(cx), np.array(cy), np.array(cn)
 
 
-def main(tag="eps1_all"):
+def main(tag="eps1_all", scene=None):
+    global OUTDIR
+    if scene:
+        OUTDIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                 "..", "..", "..", scene, "COLMAP results", "feasible_sets"))
     rows, ok, col = load(tag)
+    eps_px = float(rows[0]["eps_px"])
     nv_all = np.array([float(r["n_views"]) for r in rows])
     empty = np.array([r["empty"] == "1" for r in rows])
 
@@ -136,7 +142,7 @@ def main(tag="eps1_all"):
     for a in ax.ravel():
         a.grid(True, which="both", alpha=0.25)
     fig.suptitle("Feasible sets $\\mathcal{F}_k$ for all %d landmarks, "
-                 "$\\epsilon$ = 1 px  (%d non-empty)" % (len(rows), len(ok)),
+                 "$\epsilon$ = %g px  (%d non-empty)" % (len(rows), eps_px, len(ok)),
                  fontsize=13)
     fig.tight_layout(rect=(0, 0, 1, 0.955))
     out = os.path.join(OUTDIR, "sets_overview_%s.png" % tag)
@@ -161,7 +167,7 @@ def main(tag="eps1_all"):
           xlabel="track length   |views($k$)|",
           ylabel="diameter of $\\mathcal{F}_k$   [scene units]",
           title="How far a landmark can move vs. how many views see it\n"
-                "($\\epsilon$ = 1 px, %d landmarks)" % len(ok))
+                "($\epsilon$ = %g px, %d landmarks)" % (eps_px, len(ok)))
     a.grid(True, which="both", alpha=0.25)
     a.legend(frameon=False)
     fig2.tight_layout()
@@ -186,4 +192,5 @@ def main(tag="eps1_all"):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "eps1_all")
+    main(sys.argv[1] if len(sys.argv) > 1 else "eps1_all",
+         sys.argv[2] if len(sys.argv) > 2 else None)

@@ -1,0 +1,44 @@
+{
+  "scene": "airplane",
+  "landmarks_with_GT": 4428,
+  "landmarks_with_LOO(n_k>=3)": 3789,
+  "compared": 3314,
+  "rank_corr_LOO_vs_GT": 0.7128373134202124,
+  "per_alpha": {
+    "0.05": {
+      "eps_GT_conformal": 17.1764332715287,
+      "eps_LOO": 5.888372548085277,
+      "coverage_with_eps_LOO": 0.8236224028906955,
+      "eps_insample": 3.4357466705409445,
+      "coverage_with_eps_insample": 0.5742999096657633
+    },
+    "0.1": {
+      "eps_GT_conformal": 8.975357771330287,
+      "eps_LOO": 4.359676988200431,
+      "coverage_with_eps_LOO": 0.7082204155374887,
+      "eps_insample": 3.1605806703752424,
+      "coverage_with_eps_insample": 0.5284552845528455
+    },
+    "0.2": {
+      "eps_GT_conformal": 5.518390340064734,
+      "eps_LOO": 3.6389766773343246,
+      "coverage_with_eps_LOO": 0.6043360433604336,
+      "eps_insample": 2.695475206537549,
+      "coverage_with_eps_insample": 0.43947606142728096
+    }
+  },
+  "observation_quantiles": {
+    "LOO": {
+      "50": 0.7842650105216649,
+      "90": 2.439041612271143,
+      "95": 2.9985843613941454,
+      "99": 4.099492344607524
+    },
+    "in_sample": {
+      "50": 0.6848489127461335,
+      "90": 2.1029938050901866,
+      "95": 2.5759978361715494,
+      "99": 3.2760644795615974
+    }
+  }
+}

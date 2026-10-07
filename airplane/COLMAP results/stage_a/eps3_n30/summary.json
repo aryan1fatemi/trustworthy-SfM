@@ -1,0 +1,65 @@
+{
+  "gauge": {
+    "reference": "r_63.png",
+    "scale_camera": "r_12.png",
+    "scale_axis": 0,
+    "z_min": 0.001572127896746725,
+    "min_colmap_depth": 0.5688249997540175
+  },
+  "step4_colmap_residual_undistorted_px": {
+    "max": 3.908175947664081,
+    "p99": 3.248456441187767,
+    "n_over_eps": 257,
+    "witness_at_eps": false
+  },
+  "step7": {
+    "feasible_at_eps": false,
+    "eps_star_px": 3.478204555509887
+  },
+  "step13_premise": {
+    "observations_with_GT": 10502,
+    "true_rotations_frac_obs_within_eps": 0.8874500095219958,
+    "true_rotations_max_px": 127.70295068723641,
+    "stageA_constraints_frac_obs_within_eps": 0.4129689582936584,
+    "stageA_constraints_max_px": 127.17505612171608,
+    "premise_holds_for_whole_subset": false,
+    "rotation_error_deg_median_max": [
+      0.17668725900891913,
+      0.49803237456652044
+    ]
+  },
+  "eps": 3.0,
+  "subset_images": [
+    "r_63.png",
+    "r_90.png",
+    "r_5_val.png",
+    "r_25.png",
+    "r_71.png",
+    "r_16_val.png",
+    "r_92.png",
+    "r_85_val.png",
+    "r_7.png",
+    "r_55_val.png",
+    "r_54_val.png",
+    "r_7_val.png",
+    "r_88_val.png",
+    "r_82.png",
+    "r_0.png",
+    "r_47_val.png",
+    "r_76_val.png",
+    "r_15.png",
+    "r_12.png",
+    "r_21.png",
+    "r_41_val.png",
+    "r_10_val.png",
+    "r_78.png",
+    "r_69.png",
+    "r_19.png",
+    "r_93_val.png",
+    "r_38_val.png",
+    "r_58.png",
+    "r_26.png",
+    "r_79.png"
+  ],
+  "seconds": 64
+}

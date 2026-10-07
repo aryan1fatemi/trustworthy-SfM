@@ -1,0 +1,18 @@
+{
+  "scene": "airplane",
+  "landmarks_with_GT": 4428,
+  "observations": 53109,
+  "image_noise_sigma": 0.19123056416268522,
+  "tensor_regulariser": 0.16163349413486552,
+  "flat_keypoint_fraction": 0.010135091957107984,
+  "noise_model_weak_axis": {
+    "note": "predicted std = sigma / sqrt(4 pi sigma_I^2 lambda_2) (Forstner, Gaussian window); measured = |r . e_2|",
+    "median_predicted_std_px": 0.006125042730962778,
+    "median_measured_abs_error_px": 1.3069781601775887,
+    "ratio_measured_over_predicted": {
+      "p25": 75.33891849457058,
+      "median": 206.36889809069493,
+      "p75": 494.9008935602474
+    }
+  }
+}

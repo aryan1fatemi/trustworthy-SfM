@@ -1,0 +1,99 @@
+{
+  "eps": 3.0,
+  "images": {
+    "camera1": "r_82.png",
+    "camera2": "r_15.png",
+    "camera3": "r_16_val.png"
+  },
+  "setup": {
+    "common_landmarks": 196,
+    "nonempty_sets": 195,
+    "empty_sets": 1,
+    "L3": 107,
+    "z_min": 0.002863178655985809
+  },
+  "step1": {
+    "points": 107,
+    "inliers": 86,
+    "deg_from_colmap": 0.8997203825968663,
+    "centre_pnp": [
+      -1.3664486149987964,
+      -0.7516572960797001,
+      0.4618356330649269
+    ],
+    "centre_colmap": [
+      -1.395687808351137,
+      -0.7852807568821467,
+      0.47574323189316553
+    ]
+  },
+  "delta0_deg": 5.0,
+  "step4": {
+    "cells_tested": 35081,
+    "survivors": 19314,
+    "h_final_deg": 0.15625,
+    "seconds": 616
+  },
+  "step6": {
+    "delta3_deg": 8.156228489273602,
+    "clusters": 1,
+    "rotation_cells_extent_deg_xyz": [
+      9.999999999999998,
+      9.999999999999998,
+      8.125
+    ],
+    "surviving_cell_centres_deg_mean": [
+      -0.1041666666666667,
+      0.003834653619136334,
+      -0.19881950916433616
+    ]
+  },
+  "step5": {
+    "centre_lo": [
+      -1.7233352837358367,
+      -1.1752552456434133,
+      0.14605310224166768
+    ],
+    "centre_hi": [
+      -1.0147573970695491,
+      -0.36157350272249544,
+      0.7796106876906653
+    ],
+    "centre_size": [
+      0.7085778866662875,
+      0.8136817429209179,
+      0.6335575854489977
+    ],
+    "centre_colmap": [
+      -1.395687808351137,
+      -0.7852807568821467,
+      0.47574323189316553
+    ]
+  },
+  "evaluation_gt": {
+    "camera2_rotation_error_deg": 0.17839440465459785,
+    "camera3_gt_rotation_from_Rhat_deg": 1.0446561747463083,
+    "camera3_gt_rotation_in_surviving_cells": true,
+    "camera3_gt_rotation_within_delta3": true,
+    "camera3_gt_centre_in_box": true,
+    "camera3_gt_centre": [
+      -1.4085721728619804,
+      -0.7805235359549632,
+      0.4840580241096895
+    ],
+    "colmap_rotation_within_delta3": true,
+    "colmap_centre_in_box": true,
+    "landmarks": {
+      "common_median_diag_pair": 0.10293423229089343,
+      "common_median_diag_with_cam3": 0.10293423229089256,
+      "common_median_shrink_ratio": 1.0,
+      "common_gt_in_pair_box": 0.8979591836734694,
+      "common_gt_in_box_with_cam3": 0.8979591836734694,
+      "new_count": 84,
+      "new_median_diag": 9.017264278915752,
+      "new_bounded_fraction": 1.0,
+      "new_gt_in_box": 1.0
+    }
+  },
+  "seconds": 1906
+}

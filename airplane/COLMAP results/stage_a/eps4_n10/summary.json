@@ -1,0 +1,79 @@
+{
+  "gauge": {
+    "reference": "r_63.png",
+    "scale_camera": "r_85_val.png",
+    "scale_axis": 1,
+    "z_min": 0.0034938374510870922,
+    "min_colmap_depth": 2.769088416316621
+  },
+  "step4_colmap_residual_undistorted_px": {
+    "max": 3.908175947664081,
+    "p99": 3.2491883310210947,
+    "n_over_eps": 0,
+    "witness_at_eps": true
+  },
+  "step7": {
+    "feasible_at_eps": true,
+    "eps_star_px": 3.3503364044980017
+  },
+  "step13_premise": {
+    "observations_with_GT": 3441,
+    "true_rotations_frac_obs_within_eps": 0.9279279279279279,
+    "true_rotations_max_px": 116.39373999091879,
+    "stageA_constraints_frac_obs_within_eps": 0.8622493461203139,
+    "stageA_constraints_max_px": 117.12942647699664,
+    "premise_holds_for_whole_subset": false,
+    "rotation_error_deg_median_max": [
+      0.09568768901090216,
+      0.18758605364318276
+    ]
+  },
+  "step8_seconds": 1209,
+  "step11_sets": {
+    "landmarks": 720,
+    "bounded_fraction": 1.0,
+    "box_diag_over_dk_median": 0.1321759766096523,
+    "fixedpose_box_diag_over_dk_median": 0.050696077633461484,
+    "camera_box_diag_median": 0.22174245665754966
+  },
+  "step13_coverage": {
+    "landmarks_all": [
+      0.9891304347826086,
+      644
+    ],
+    "landmarks_own_obs_satisfy_stageA": [
+      1.0,
+      402
+    ],
+    "landmarks_own_obs_violate_stageA": [
+      0.9710743801652892,
+      242
+    ],
+    "landmarks_fixedpose_box_all": [
+      0.9347826086956522,
+      644
+    ],
+    "cameras": [
+      1.0,
+      9
+    ]
+  },
+  "step13_tightness": {
+    "colmap_error_over_certificate_median": 0.03231566860362503,
+    "certificate_over_dk_median": 0.06976921918516846
+  },
+  "eps": 4.0,
+  "subset_images": [
+    "r_63.png",
+    "r_90.png",
+    "r_5_val.png",
+    "r_25.png",
+    "r_71.png",
+    "r_16_val.png",
+    "r_92.png",
+    "r_85_val.png",
+    "r_7.png",
+    "r_55_val.png"
+  ],
+  "seconds": 1234
+}

@@ -1,0 +1,7 @@
+{
+  "source": "C:\\Users\\fatem\\COLMAP\\nerf_synthetic\\airplane\\images",
+  "noise": "uniform U(-amp, amp) per pixel and channel, then round+clip",
+  "amp": 4.0,
+  "std": 2.3094010767585034,
+  "images": 200
+}

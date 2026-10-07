@@ -1,0 +1,55 @@
+{
+  "step1_alignment": {
+    "n": 198,
+    "scale": 1.1226477505426973,
+    "rmse": 0.012842984085425594,
+    "median_radius": 3.800130892812062,
+    "max": 0.04946311117692056,
+    "rmse_normalised": 0.0033796162415663275
+  },
+  "step0": {
+    "name_mapping": {
+      "colmap_images": 198,
+      "mapped_by_filename": 198
+    },
+    "error_column_regression_px": 3.61335961152065e-13,
+    "rotation_err_deg_with_flip": [
+      0.1385412723132076,
+      0.752656370741074
+    ],
+    "rotation_err_deg_without_flip": [
+      179.92026683939326,
+      179.99970144889403
+    ],
+    "depth_convention_check": {
+      "z": {
+        "median_abs": 0.001473094927682217
+      },
+      "ray": {
+        "median_abs": 0.02044822223734255
+      }
+    },
+    "depth_convention": "z-depth",
+    "depth_units": "GT scene units (depth ray-cast from the mesh in the pose frame)",
+    "depth_background": "0.0 marks background / ray miss; treated as invalid"
+  },
+  "observations": {
+    "total": 58804,
+    "valid_scored": 52133,
+    "background": 6535,
+    "discontinuity": 86,
+    "no_reference": 50
+  },
+  "H_matches_exact_polytope": true,
+  "landmarks": {
+    "total": 5092,
+    "with_GT_reference": 4428,
+    "no_valid_observation": 664,
+    "flagged_inconsistent": 112
+  },
+  "literal_LP_crosscheck_seed0": {
+    "cases": 35280,
+    "disagreements": 0,
+    "unbounded_sets": 191
+  }
+}

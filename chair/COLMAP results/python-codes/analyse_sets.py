@@ -22,10 +22,24 @@ import time
 import argparse
 import numpy as np
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
 from colmap_io import read_model
-from feasible_set import build_views, max_inf_residual, MODEL, OUTDIR
+from feasible_set import build_views, max_inf_residual
+import feasible_set as _fs
 import exact_polytope as ex
+from scipy.optimize import linprog
+
+MODEL, OUTDIR = _fs.MODEL, _fs.OUTDIR
+
+
+def set_scene(scene):
+    """Point MODEL/OUTDIR at another dataset (default: the chair folder)."""
+    global MODEL, OUTDIR
+    if scene:
+        MODEL = os.path.abspath(os.path.join(HERE, "..", "..", "..", scene, "COLMAP results"))
+        OUTDIR = os.path.join(MODEL, "feasible_sets")
+    return MODEL, OUTDIR
 
 
 def oriented_box(V):
@@ -72,10 +86,19 @@ def analyse_point(pid, pts, imgs, pose, eps):
 
     H = ex.halfspaces(views, eps)
     ctr, inradius = ex.chebyshev_center(H)
-    if ctr is None or inradius <= 0:
+    if ctr is None:
+        # chebyshev_center returns None for infeasible AND for unbounded;
+        # separate them so a non-empty unbounded set is not reported as empty.
+        feas = linprog(np.zeros(3), A_ub=H[:, :3], b_ub=-H[:, 3],
+                       bounds=[(None, None)] * 3, method="highs")
+        row["empty"] = 0 if feas.status == 0 else 1
+        row["unbounded"] = int(feas.status == 0)
+        return row
+    if inradius <= 0:
         row["empty"] = 1
         return row
     row["empty"] = 0
+    row["unbounded"] = 0
 
     try:
         V, volume, area = ex.vertices_and_volume(H, ctr)
@@ -121,7 +144,7 @@ def analyse_point(pid, pts, imgs, pose, eps):
     return row
 
 
-COLS = ["point3D_id", "n_views", "empty", "eps_px", "d_k", "d_k_min", "d_k_max",
+COLS = ["point3D_id", "n_views", "empty", "unbounded", "eps_px", "d_k", "d_k_min", "d_k_max",
         "colmap_error_px", "max_inf_residual_px",
         "volume", "diameter", "max_displacement_from_X_k", "equivalent_radius",
         "inradius", "surface_area",
@@ -140,7 +163,10 @@ def main():
                     help="random sample size; 0 = every landmark")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--tag", default=None)
+    ap.add_argument("--scene", default=None, help="dataset folder, e.g. airplane")
     args = ap.parse_args()
+    global MODEL, OUTDIR
+    MODEL, OUTDIR = set_scene(args.scene)
 
     os.makedirs(OUTDIR, exist_ok=True)
     tag = args.tag or ("eps%g_n%s" % (args.eps, args.n or "all"))

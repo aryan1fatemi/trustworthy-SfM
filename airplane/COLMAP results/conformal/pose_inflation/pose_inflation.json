@@ -1,0 +1,77 @@
+{
+  "0.05": {
+    "eps_det": 5.949715462363542,
+    "eps_tot": 6.332877084774964,
+    "obs_coverage": {
+      "det": 0.9520253451007015,
+      "inflated": 0.9983404993588293,
+      "tot": 0.9569661311005506
+    },
+    "landmark_coverage": {
+      "det": 0.8294784580498866,
+      "inflated": 0.9873015873015873,
+      "tot": 0.8444444444444444
+    },
+    "median_half_width_px": {
+      "det": 5.949715462363542,
+      "inflated": 98.45961891314155,
+      "tot": 6.332877084774964
+    },
+    "p90_half_width_px": {
+      "det": 5.949715462363542,
+      "inflated": 154.26394405797708,
+      "tot": 6.332877084774964
+    },
+    "images_true_err_in_polytope": 0.9696969696969697,
+    "images_true_err_in_box": 0.9949494949494949
+  },
+  "0.1": {
+    "eps_det": 3.9129223697992757,
+    "eps_tot": 4.481880069493684,
+    "obs_coverage": {
+      "det": 0.8914912876216339,
+      "inflated": 0.9973598853435921,
+      "tot": 0.9166855246284982
+    },
+    "landmark_coverage": {
+      "det": 0.6535147392290249,
+      "inflated": 0.98140589569161,
+      "tot": 0.7142857142857143
+    },
+    "median_half_width_px": {
+      "det": 3.9129223697992757,
+      "inflated": 64.75349078527123,
+      "tot": 4.481880069493684
+    },
+    "p90_half_width_px": {
+      "det": 3.9129223697992757,
+      "inflated": 101.45406807708609,
+      "tot": 4.481880069493684
+    },
+    "images_true_err_in_polytope": 0.9444444444444444,
+    "images_true_err_in_box": 0.9848484848484849,
+    "set_size": {
+      "det": {
+        "median_diam_over_dk": 0.025322608243547193,
+        "unbounded_rate": 0.0,
+        "empty_rate": 0.0
+      },
+      "inflated": {
+        "median_diam_over_dk": 0.3637452892125763,
+        "unbounded_rate": 0.09387755102040816,
+        "empty_rate": 0.0
+      },
+      "tot": {
+        "median_diam_over_dk": 0.029665588314576694,
+        "unbounded_rate": 0.0,
+        "empty_rate": 0.0
+      }
+    }
+  },
+  "box_overapproximation": {
+    "samples": 680,
+    "median": 13.671796570775392,
+    "p10": 8.591451890283228,
+    "p90": 20.531757860261898
+  }
+}

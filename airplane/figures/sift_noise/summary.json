@@ -1,0 +1,77 @@
+{
+  "clean": {
+    "keypoints_per_image_median": 410.5,
+    "keypoints_per_image_min_max": [
+      197,
+      532
+    ],
+    "object_keypoints_per_image_median": 364.0,
+    "background_keypoints_per_image_median": 45.0,
+    "background_fraction": 0.11344046377990795,
+    "matched_fraction_object": 0.8391768839176884,
+    "matched_fraction_background": 0.8295416339796032,
+    "image_pairs_with_raw_matches": 10239,
+    "verified_pairs": 8494,
+    "verified_inliers_per_pair_median": 32.0,
+    "verified_inliers_total": 405887,
+    "sift_scale_px_median_object": 1.4969178438186646,
+    "sift_scale_px_median_background": 2.4920358657836914
+  },
+  "low": {
+    "keypoints_per_image_median": 457.0,
+    "keypoints_per_image_min_max": [
+      215,
+      582
+    ],
+    "object_keypoints_per_image_median": 399.5,
+    "background_keypoints_per_image_median": 53.0,
+    "background_fraction": 0.11474729304320752,
+    "matched_fraction_object": 0.817389605314576,
+    "matched_fraction_background": 0.7941915385388403,
+    "image_pairs_with_raw_matches": 10338,
+    "verified_pairs": 8553,
+    "verified_inliers_per_pair_median": 31.0,
+    "verified_inliers_total": 404029,
+    "sift_scale_px_median_object": 1.4129458665847778,
+    "sift_scale_px_median_background": 2.1809380054473877,
+    "repeatability_object_median": 0.8394191638919719,
+    "median_shift_px": 0.0870878966868951
+  },
+  "high": {
+    "keypoints_per_image_median": 679.0,
+    "keypoints_per_image_min_max": [
+      302,
+      819
+    ],
+    "object_keypoints_per_image_median": 573.0,
+    "background_keypoints_per_image_median": 107.5,
+    "background_fraction": 0.15950558238481963,
+    "matched_fraction_object": 0.6235982042234005,
+    "matched_fraction_background": 0.49196845794392524,
+    "image_pairs_with_raw_matches": 9390,
+    "verified_pairs": 7369,
+    "verified_inliers_per_pair_median": 29.0,
+    "verified_inliers_total": 305968,
+    "sift_scale_px_median_object": 1.3505589962005615,
+    "sift_scale_px_median_background": 1.3815410137176514,
+    "repeatability_object_median": 0.5762046501179379,
+    "median_shift_px": 0.30096596927077895
+  },
+  "noise": {
+    "clean": null,
+    "low": {
+      "source": "C:\\Users\\fatem\\COLMAP\\nerf_synthetic\\airplane\\images",
+      "noise": "uniform U(-amp, amp) per pixel and channel, then round+clip",
+      "amp": 4.0,
+      "std": 2.3094010767585034,
+      "images": 200
+    },
+    "high": {
+      "source": "C:\\Users\\fatem\\COLMAP\\nerf_synthetic\\airplane\\images",
+      "noise": "uniform U(-amp, amp) per pixel and channel, then round+clip",
+      "amp": 20.0,
+      "std": 11.547005383792516,
+      "images": 200
+    }
+  }
+}
