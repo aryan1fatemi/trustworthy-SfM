@@ -1,0 +1,414 @@
+/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/render_lego.py:102: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+00:06.415  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_0.png'
+materials used: ['Black', 'Brown', 'Gray', 'Light_brown', 'Red_Glass', 'RubberBand', 'Sand', 'Yellow', 'transparent']
+replaced from .blend: ['Black', 'Brown', 'Gray', 'Light_brown', 'Red_Glass', 'RubberBand', 'Sand', 'Yellow', 'transparent'] | not found: []
+meshes: 438 (expect 438)
+cycles device: METAL ['Apple M4 Pro (GPU - 20 cores)']
+train r_0  render 2.6s  depth 0.9s  object px 133229
+00:09.227  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_1.png'
+train r_1  render 1.9s  depth 0.8s  object px 112527
+00:11.922  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_2.png'
+train r_2  render 1.9s  depth 0.9s  object px 153028
+00:14.502  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_3.png'
+train r_3  render 1.7s  depth 0.8s  object px 140747
+00:16.981  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_4.png'
+train r_4  render 1.7s  depth 0.8s  object px 151426
+00:19.753  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_5.png'
+train r_5  render 1.9s  depth 0.8s  object px 149967
+00:22.557  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_6.png'
+train r_6  render 2.0s  depth 0.9s  object px 147988
+00:25.190  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_7.png'
+train r_7  render 1.7s  depth 0.8s  object px 138612
+00:27.875  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_8.png'
+train r_8  render 1.9s  depth 0.8s  object px 150370
+00:30.460  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_9.png'
+train r_9  render 1.8s  depth 0.8s  object px 140828
+00:32.997  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_10.png'
+train r_10  render 1.7s  depth 0.8s  object px 117813
+00:35.645  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_11.png'
+train r_11  render 1.9s  depth 0.9s  object px 149529
+00:38.215  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_12.png'
+train r_12  render 1.7s  depth 0.8s  object px 147734
+00:40.723  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_13.png'
+train r_13  render 1.7s  depth 0.8s  object px 149323
+00:43.413  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_14.png'
+train r_14  render 1.9s  depth 0.8s  object px 149591
+00:45.973  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_15.png'
+train r_15  render 1.7s  depth 0.9s  object px 146722
+00:48.819  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_16.png'
+train r_16  render 2.0s  depth 0.7s  object px 99093
+00:51.468  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_17.png'
+train r_17  render 1.9s  depth 0.8s  object px 132793
+00:53.967  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_18.png'
+train r_18  render 1.7s  depth 0.8s  object px 147488
+00:56.554  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_19.png'
+train r_19  render 1.7s  depth 0.8s  object px 145915
+00:59.223  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_20.png'
+train r_20  render 1.9s  depth 0.8s  object px 137232
+01:01.985  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_21.png'
+train r_21  render 2.0s  depth 0.8s  object px 141285
+01:04.578  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_22.png'
+train r_22  render 1.8s  depth 0.8s  object px 143316
+01:07.252  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_23.png'
+train r_23  render 1.8s  depth 0.8s  object px 131080
+01:09.754  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_24.png'
+train r_24  render 1.7s  depth 0.7s  object px 110998
+01:12.264  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_25.png'
+train r_25  render 1.8s  depth 0.8s  object px 140329
+01:14.868  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_26.png'
+train r_26  render 1.8s  depth 0.8s  object px 146430
+01:17.385  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_27.png'
+train r_27  render 1.7s  depth 0.8s  object px 135892
+01:19.998  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_28.png'
+train r_28  render 1.8s  depth 0.8s  object px 131862
+01:22.448  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_29.png'
+train r_29  render 1.7s  depth 0.8s  object px 134175
+01:25.044  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_30.png'
+train r_30  render 1.8s  depth 0.7s  object px 124721
+01:27.472  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_31.png'
+train r_31  render 1.7s  depth 0.8s  object px 123425
+01:30.104  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_32.png'
+train r_32  render 1.8s  depth 0.8s  object px 129095
+01:32.583  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_33.png'
+train r_33  render 1.7s  depth 0.8s  object px 132884
+01:35.237  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_34.png'
+train r_34  render 1.8s  depth 0.8s  object px 143618
+01:37.752  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_35.png'
+train r_35  render 1.7s  depth 0.8s  object px 153457
+01:40.413  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_36.png'
+train r_36  render 1.8s  depth 0.8s  object px 146956
+01:42.920  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_37.png'
+train r_37  render 1.7s  depth 0.8s  object px 147795
+01:45.560  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_38.png'
+train r_38  render 1.8s  depth 0.8s  object px 150859
+01:48.080  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_39.png'
+train r_39  render 1.7s  depth 0.8s  object px 146808
+01:50.717  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_40.png'
+train r_40  render 1.8s  depth 0.8s  object px 150906
+01:53.211  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_41.png'
+train r_41  render 1.7s  depth 0.8s  object px 135671
+01:55.855  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_42.png'
+train r_42  render 1.9s  depth 0.7s  object px 123770
+01:58.301  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_43.png'
+train r_43  render 1.7s  depth 0.8s  object px 153890
+02:00.899  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_44.png'
+train r_44  render 1.8s  depth 0.7s  object px 94182
+02:03.490  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_45.png'
+train r_45  render 1.9s  depth 0.8s  object px 147707
+02:06.038  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_46.png'
+train r_46  render 1.7s  depth 0.8s  object px 109458
+02:08.678  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_47.png'
+train r_47  render 1.9s  depth 0.8s  object px 149165
+02:11.187  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_48.png'
+train r_48  render 1.7s  depth 0.8s  object px 125816
+02:13.699  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_49.png'
+train r_49  render 1.7s  depth 0.8s  object px 153457
+02:16.317  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_50.png'
+train r_50  render 1.8s  depth 0.8s  object px 121721
+02:18.873  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_51.png'
+train r_51  render 1.8s  depth 0.8s  object px 153135
+02:21.443  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_52.png'
+train r_52  render 1.7s  depth 0.8s  object px 136425
+02:24.173  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_53.png'
+train r_53  render 1.9s  depth 0.8s  object px 147397
+02:26.654  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_54.png'
+train r_54  render 1.6s  depth 0.7s  object px 84395
+02:29.022  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_55.png'
+train r_55  render 1.7s  depth 0.8s  object px 149382
+02:31.831  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_56.png'
+train r_56  render 2.0s  depth 0.8s  object px 151125
+02:34.391  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_57.png'
+train r_57  render 1.7s  depth 0.8s  object px 151460
+02:37.023  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_58.png'
+train r_58  render 1.8s  depth 0.8s  object px 145681
+02:39.679  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_59.png'
+train r_59  render 1.8s  depth 0.8s  object px 146879
+02:42.195  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_60.png'
+train r_60  render 1.7s  depth 0.8s  object px 142430
+02:44.842  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_61.png'
+train r_61  render 1.8s  depth 0.8s  object px 149678
+02:47.272  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_62.png'
+train r_62  render 1.6s  depth 0.7s  object px 102941
+02:49.782  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_63.png'
+train r_63  render 1.8s  depth 0.8s  object px 144069
+02:52.235  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_64.png'
+train r_64  render 1.7s  depth 0.7s  object px 103916
+02:54.784  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_65.png'
+train r_65  render 1.8s  depth 0.8s  object px 152015
+02:57.354  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_66.png'
+train r_66  render 1.7s  depth 0.8s  object px 152358
+03:00.043  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_67.png'
+train r_67  render 1.9s  depth 0.8s  object px 140575
+03:02.578  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_68.png'
+train r_68  render 1.7s  depth 0.8s  object px 152235
+03:05.360  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_69.png'
+train r_69  render 1.9s  depth 0.8s  object px 147165
+03:08.030  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_70.png'
+train r_70  render 1.9s  depth 0.8s  object px 150451
+03:10.558  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_71.png'
+train r_71  render 1.7s  depth 0.8s  object px 141833
+03:13.229  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_72.png'
+train r_72  render 1.9s  depth 0.8s  object px 145554
+03:15.700  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_73.png'
+train r_73  render 1.6s  depth 0.7s  object px 104110
+03:18.264  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_74.png'
+train r_74  render 1.9s  depth 0.8s  object px 137070
+03:20.697  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_75.png'
+train r_75  render 1.6s  depth 0.7s  object px 115042
+03:23.267  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_76.png'
+train r_76  render 1.8s  depth 0.7s  object px 113437
+03:25.666  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_77.png'
+train r_77  render 1.7s  depth 0.8s  object px 118679
+03:28.337  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_78.png'
+train r_78  render 1.9s  depth 0.8s  object px 146435
+03:30.839  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_79.png'
+train r_79  render 1.7s  depth 0.8s  object px 146697
+03:33.507  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_80.png'
+train r_80  render 1.8s  depth 0.8s  object px 143913
+03:36.203  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_81.png'
+train r_81  render 1.9s  depth 0.8s  object px 148096
+03:38.706  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_82.png'
+train r_82  render 1.7s  depth 0.8s  object px 139261
+03:41.335  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_83.png'
+train r_83  render 1.9s  depth 0.8s  object px 132598
+03:43.808  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_84.png'
+train r_84  render 1.7s  depth 0.8s  object px 148586
+03:46.432  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_85.png'
+train r_85  render 1.8s  depth 0.8s  object px 139303
+03:48.913  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_86.png'
+train r_86  render 1.7s  depth 0.8s  object px 125427
+03:51.552  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_87.png'
+train r_87  render 1.9s  depth 0.8s  object px 153383
+03:54.088  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_88.png'
+train r_88  render 1.7s  depth 0.8s  object px 153613
+03:56.769  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_89.png'
+train r_89  render 1.8s  depth 0.8s  object px 154246
+03:59.232  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_90.png'
+train r_90  render 1.7s  depth 0.8s  object px 142747
+04:01.815  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_91.png'
+train r_91  render 1.8s  depth 0.7s  object px 116087
+04:04.272  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_92.png'
+train r_92  render 1.7s  depth 0.8s  object px 139744
+04:06.781  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_93.png'
+train r_93  render 1.7s  depth 0.8s  object px 145050
+04:09.447  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_94.png'
+train r_94  render 1.8s  depth 0.8s  object px 151309
+04:11.962  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_95.png'
+train r_95  render 1.7s  depth 0.8s  object px 129664
+04:14.600  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_96.png'
+train r_96  render 1.8s  depth 0.8s  object px 148650
+04:17.138  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_97.png'
+train r_97  render 1.7s  depth 0.8s  object px 149843
+04:19.673  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_98.png'
+train r_98  render 1.7s  depth 0.7s  object px 81615
+04:22.027  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_99.png'
+train r_99  render 1.7s  depth 0.8s  object px 150361
+04:24.529  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_0.png'
+val r_0  render 1.7s  depth 0.9s  object px 149035
+04:27.264  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_1.png'
+val r_1  render 1.9s  depth 0.8s  object px 126285
+04:29.960  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_2.png'
+val r_2  render 1.9s  depth 0.8s  object px 132481
+04:32.514  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_3.png'
+val r_3  render 1.7s  depth 0.8s  object px 109458
+04:35.216  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_4.png'
+val r_4  render 1.9s  depth 0.9s  object px 147631
+04:37.770  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_5.png'
+val r_5  render 1.7s  depth 0.8s  object px 140921
+04:40.282  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_6.png'
+val r_6  render 1.7s  depth 0.8s  object px 128387
+04:42.896  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_7.png'
+val r_7  render 1.8s  depth 0.8s  object px 134882
+04:45.419  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_8.png'
+val r_8  render 1.8s  depth 0.8s  object px 128945
+04:48.193  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_9.png'
+val r_9  render 1.9s  depth 0.9s  object px 152521
+04:50.981  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_10.png'
+val r_10  render 1.9s  depth 0.8s  object px 147992
+04:53.514  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_11.png'
+val r_11  render 1.7s  depth 0.8s  object px 149210
+04:55.998  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_12.png'
+val r_12  render 1.6s  depth 0.7s  object px 95928
+04:58.627  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_13.png'
+val r_13  render 1.9s  depth 0.8s  object px 130191
+05:01.099  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_14.png'
+val r_14  render 1.7s  depth 0.8s  object px 153684
+05:03.586  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_15.png'
+val r_15  render 1.7s  depth 0.8s  object px 121368
+05:06.184  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_16.png'
+val r_16  render 1.8s  depth 0.8s  object px 141138
+05:08.738  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_17.png'
+val r_17  render 1.7s  depth 0.8s  object px 107549
+05:11.183  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_18.png'
+val r_18  render 1.7s  depth 0.8s  object px 132817
+05:13.608  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_19.png'
+val r_19  render 1.6s  depth 0.8s  object px 113983
+05:16.271  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_20.png'
+val r_20  render 1.9s  depth 0.8s  object px 148594
+05:18.792  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_21.png'
+val r_21  render 1.7s  depth 0.8s  object px 138538
+05:21.475  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_22.png'
+val r_22  render 1.9s  depth 0.8s  object px 152089
+05:24.076  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_23.png'
+val r_23  render 1.8s  depth 0.8s  object px 151041
+05:26.772  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_24.png'
+val r_24  render 1.9s  depth 0.8s  object px 147778
+05:29.340  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_25.png'
+val r_25  render 1.7s  depth 0.8s  object px 140427
+05:31.999  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_26.png'
+val r_26  render 1.8s  depth 0.8s  object px 150480
+05:34.626  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_27.png'
+val r_27  render 1.8s  depth 0.8s  object px 127146
+05:37.106  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_28.png'
+val r_28  render 1.7s  depth 0.8s  object px 130553
+05:39.686  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_29.png'
+val r_29  render 1.8s  depth 0.7s  object px 117916
+05:42.100  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_30.png'
+val r_30  render 1.7s  depth 0.8s  object px 126891
+05:44.583  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_31.png'
+val r_31  render 1.7s  depth 0.8s  object px 141275
+05:47.219  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_32.png'
+val r_32  render 1.8s  depth 0.8s  object px 128809
+05:49.756  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_33.png'
+val r_33  render 1.7s  depth 0.8s  object px 141862
+05:52.408  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_34.png'
+val r_34  render 1.8s  depth 0.8s  object px 125347
+05:54.888  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_35.png'
+val r_35  render 1.7s  depth 0.8s  object px 149413
+05:57.536  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_36.png'
+val r_36  render 1.8s  depth 0.8s  object px 124300
+05:59.986  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_37.png'
+val r_37  render 1.7s  depth 0.7s  object px 96683
+06:02.504  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_38.png'
+val r_38  render 1.8s  depth 0.8s  object px 144601
+06:04.982  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_39.png'
+val r_39  render 1.6s  depth 0.7s  object px 123694
+06:07.626  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_40.png'
+val r_40  render 1.9s  depth 0.8s  object px 152493
+06:10.175  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_41.png'
+val r_41  render 1.7s  depth 0.8s  object px 145997
+06:12.824  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_42.png'
+val r_42  render 1.8s  depth 0.8s  object px 152778
+06:15.336  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_43.png'
+val r_43  render 1.7s  depth 0.8s  object px 148430
+06:18.083  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_44.png'
+val r_44  render 1.9s  depth 0.8s  object px 151974
+06:20.779  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_45.png'
+val r_45  render 1.8s  depth 0.8s  object px 145578
+06:23.256  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_46.png'
+val r_46  render 1.7s  depth 0.8s  object px 121863
+06:25.878  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_47.png'
+val r_47  render 1.8s  depth 0.8s  object px 141980
+06:28.340  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_48.png'
+val r_48  render 1.7s  depth 0.7s  object px 116893
+06:30.921  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_49.png'
+val r_49  render 1.9s  depth 0.8s  object px 145921
+06:33.436  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_50.png'
+val r_50  render 1.7s  depth 0.8s  object px 125223
+06:36.052  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_51.png'
+val r_51  render 1.8s  depth 0.8s  object px 135798
+06:38.547  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_52.png'
+val r_52  render 1.7s  depth 0.8s  object px 153215
+06:41.218  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_53.png'
+val r_53  render 1.8s  depth 0.8s  object px 135258
+06:43.678  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_54.png'
+val r_54  render 1.7s  depth 0.8s  object px 134576
+06:46.122  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_55.png'
+val r_55  render 1.7s  depth 0.8s  object px 143645
+06:48.752  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_56.png'
+val r_56  render 1.8s  depth 0.8s  object px 141152
+06:51.242  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_57.png'
+val r_57  render 1.7s  depth 0.8s  object px 126635
+06:53.780  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_58.png'
+val r_58  render 1.8s  depth 0.7s  object px 106200
+06:56.203  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_59.png'
+val r_59  render 1.7s  depth 0.8s  object px 147615
+06:58.675  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_60.png'
+val r_60  render 1.6s  depth 0.8s  object px 120567
+07:01.344  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_61.png'
+val r_61  render 1.9s  depth 0.7s  object px 106994
+07:03.845  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_62.png'
+val r_62  render 1.8s  depth 0.8s  object px 142126
+07:06.402  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_63.png'
+val r_63  render 1.7s  depth 0.8s  object px 143426
+07:09.047  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_64.png'
+val r_64  render 1.8s  depth 0.8s  object px 134963
+07:11.506  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_65.png'
+val r_65  render 1.7s  depth 0.8s  object px 131857
+07:14.145  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_66.png'
+val r_66  render 1.8s  depth 0.8s  object px 148842
+07:16.628  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_67.png'
+val r_67  render 1.7s  depth 0.8s  object px 123040
+07:19.184  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_68.png'
+val r_68  render 1.8s  depth 0.7s  object px 95162
+07:21.570  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_69.png'
+val r_69  render 1.7s  depth 0.8s  object px 149063
+07:24.245  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_70.png'
+val r_70  render 1.8s  depth 0.8s  object px 148675
+07:26.780  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_71.png'
+val r_71  render 1.7s  depth 0.8s  object px 153237
+07:29.475  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_72.png'
+val r_72  render 1.9s  depth 0.8s  object px 145922
+07:32.089  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_73.png'
+val r_73  render 1.8s  depth 0.8s  object px 146619
+07:34.758  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_74.png'
+val r_74  render 1.8s  depth 0.8s  object px 153050
+07:37.278  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_75.png'
+val r_75  render 1.7s  depth 0.8s  object px 143709
+07:39.929  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_76.png'
+val r_76  render 1.8s  depth 0.8s  object px 146208
+07:42.456  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_77.png'
+val r_77  render 1.7s  depth 0.8s  object px 141474
+07:45.108  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_78.png'
+val r_78  render 1.8s  depth 0.8s  object px 143134
+07:47.602  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_79.png'
+val r_79  render 1.7s  depth 0.8s  object px 152211
+07:50.258  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_80.png'
+val r_80  render 1.8s  depth 0.8s  object px 139863
+07:52.736  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_81.png'
+val r_81  render 1.7s  depth 0.8s  object px 130528
+07:55.324  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_82.png'
+val r_82  render 1.8s  depth 0.7s  object px 110292
+07:57.734  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_83.png'
+val r_83  render 1.7s  depth 0.8s  object px 144356
+08:00.248  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_84.png'
+val r_84  render 1.7s  depth 0.8s  object px 150977
+08:03.031  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_85.png'
+val r_85  render 1.9s  depth 0.8s  object px 136828
+08:05.583  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_86.png'
+val r_86  render 1.8s  depth 0.8s  object px 132558
+08:08.072  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_87.png'
+val r_87  render 1.7s  depth 0.8s  object px 148754
+08:10.705  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_88.png'
+val r_88  render 1.8s  depth 0.8s  object px 136654
+08:13.181  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_89.png'
+val r_89  render 1.7s  depth 0.7s  object px 105914
+08:15.742  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_90.png'
+val r_90  render 1.8s  depth 0.8s  object px 131578
+08:18.263  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_91.png'
+val r_91  render 1.7s  depth 0.9s  object px 149780
+08:20.965  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_92.png'
+val r_92  render 1.8s  depth 0.8s  object px 145247
+08:23.461  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_93.png'
+val r_93  render 1.7s  depth 0.8s  object px 145236
+08:26.116  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_94.png'
+val r_94  render 1.8s  depth 0.8s  object px 149817
+08:28.575  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_95.png'
+val r_95  render 1.6s  depth 0.7s  object px 101004
+08:31.126  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_96.png'
+val r_96  render 1.8s  depth 0.9s  object px 149606
+08:33.645  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_97.png'
+val r_97  render 1.7s  depth 0.8s  object px 131552
+08:36.069  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_98.png'
+val r_98  render 1.6s  depth 0.7s  object px 106096
+08:38.580  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_99.png'
+val r_99  render 1.8s  depth 0.8s  object px 128789
+Info: File exported successfully
+done -> /Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+OBJ import of 'Lego_856_Bulldozer.obj' took 1111.24 ms
+Writing to /Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/mesh_normalized.obj
+OBJ export of 'mesh_normalized.obj' took 71.98 ms
+
+Blender quit

@@ -1,0 +1,19 @@
+/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/render_lego.py:87: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+02:26.495  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_0.png'
+cycles device: METAL ['Apple M4 Pro (GPU - 20 cores)']
+train r_0  render 142.6s  depth 0.8s  object px 133229
+02:30.272  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_1.png'
+train r_1  render 3.0s  depth 0.8s  object px 112527
+02:33.729  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_0.png'
+val r_0  render 2.7s  depth 0.9s  object px 149035
+02:36.299  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_1.png'
+val r_1  render 1.7s  depth 0.8s  object px 126285
+Info: File exported successfully
+done -> /Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+OBJ import of 'Lego_856_Bulldozer.obj' took 1166.61 ms
+Writing to /Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/mesh_normalized.obj
+OBJ export of 'mesh_normalized.obj' took 60.03 ms
+
+Blender quit

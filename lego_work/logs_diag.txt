@@ -1,0 +1,8 @@
+SUS LegoPlane_huge min [-18.  -34.   -3.8] max [14.   23.6  -3.58] verts 152 materials ['Sand']
+SUS Plane min [91.42 -1.25 81.39] max [126.29  48.45 130.91] verts 4 materials ['Fill_Light']
+SUS Plane.001 min [  23.21 -106.4    91.3 ] max [ 54.85 -88.34 121.01] verts 4 materials ['Light']
+REST 438 objects  min [-18.   -34.    -3.58] max [14.   23.6  24.06] verts 1089885
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+OBJ import of 'Lego_856_Bulldozer.obj' took 1157.54 ms
+
+Blender quit

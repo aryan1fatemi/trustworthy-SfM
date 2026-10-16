@@ -1,0 +1,22 @@
+/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/render_lego.py:102: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+00:08.518  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_0.png'
+materials used: ['Black', 'Brown', 'Gray', 'Light_brown', 'Red_Glass', 'RubberBand', 'Sand', 'Yellow', 'transparent']
+replaced from .blend: ['Black', 'Brown', 'Gray', 'Light_brown', 'Red_Glass', 'RubberBand', 'Sand', 'Yellow', 'transparent'] | not found: []
+meshes: 438 (expect 438)
+cycles device: METAL ['Apple M4 Pro (GPU - 20 cores)']
+train r_0  render 5.2s  depth 1.2s  object px 133229
+00:13.179  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/train/r_1.png'
+train r_1  render 3.4s  depth 0.8s  object px 112527
+00:16.018  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_0.png'
+val r_0  render 2.0s  depth 0.9s  object px 149035
+00:18.839  render           | Saved: '/Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/val/r_1.png'
+val r_1  render 1.9s  depth 0.8s  object px 126285
+Info: File exported successfully
+done -> /Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+OBJ import of 'Lego_856_Bulldozer.obj' took 896.12 ms
+Writing to /Users/satyabrata557/Ruchkin's lab work/trustworthy-SfM/lego_work/lego_gt/mesh_normalized.obj
+OBJ export of 'mesh_normalized.obj' took 61.67 ms
+
+Blender quit
