@@ -1,0 +1,69 @@
+{
+  "eps_px": 3.0,
+  "image3": "r_16_val.png",
+  "landmarks": 107,
+  "observations": 115,
+  "reference": {
+    "p3p_inliers": 86,
+    "p3p_deg_from_colmap": 0.8997203825968663,
+    "search_start": "P3P on set centres"
+  },
+  "pose_set_inner": {
+    "poses": 4201,
+    "directions": 300,
+    "max_angle_from_colmap_deg": 5.944146984799052,
+    "w_rel_colmap_lo_deg": [
+      -5.0455028000814846,
+      -4.989548430962531,
+      -2.0793645196405084
+    ],
+    "w_rel_colmap_hi_deg": [
+      5.00701782594241,
+      5.6998644693164895,
+      1.623446113469087
+    ],
+    "centre_lo": [
+      -1.6225310659954801,
+      -1.0337020319884165,
+      0.2996969041067988
+    ],
+    "centre_hi": [
+      -1.143227891270802,
+      -0.4788442533119407,
+      0.6627137543392874
+    ],
+    "centre_size": [
+      0.4793031747246781,
+      0.5548577786764758,
+      0.3630168502324886
+    ],
+    "note": "inner approximation: every pose listed is exactly feasible"
+  },
+  "gt": {
+    "rotation_offset_from_colmap_deg": [
+      -0.2509763642533517,
+      -0.11021201014831979,
+      0.017960573159432534
+    ],
+    "centre": [
+      -1.4085721728619804,
+      -0.7805235359549632,
+      0.4840580241096895
+    ],
+    "colmap_centre": [
+      -1.395687808351137,
+      -0.7852807568821467,
+      0.47574323189316553
+    ],
+    "gt_rotation_exactly_feasible": true
+  },
+  "slices": {
+    "Fk_length_median": 0.10154696005078057,
+    "slice_at_colmap_length_median": 0.043059704581692504,
+    "slice_length_over_Fk_median": 0.3774097991111475,
+    "union_over_Fk_median": 0.8504954122796314,
+    "landmarks_whose_slices_share_a_point": 7
+  },
+  "units": "gauge: camera 1 at the origin with R = I, x of camera 2's centre = 1",
+  "seconds": 982
+}

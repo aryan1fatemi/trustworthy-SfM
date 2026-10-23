@@ -1,0 +1,47 @@
+cameras ['r_82.png', 'r_15.png', 'r_16_val.png', 'r_41_val.png', 'r_10_val.png', 'r_78.png']; 529 landmarks; initial: rotation +-2 deg (64 cells of half-width 0.5 deg), centre +-0.1, points +-0.5 (cut by camera 1's pyramid)
+  [initial] points: bbox diagonal median 1.0332 (p90 1.7321); 11 rows; GT inside 434 / 480
+  [initial] r_15.png       64 cells (h 0.500 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.  0.2 0.2]; GT pose in a cell: True
+  [initial] r_16_val.png   64 cells (h 0.500 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [initial] r_41_val.png   64 cells (h 0.500 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [initial] r_10_val.png   64 cells (h 0.500 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [initial] r_78.png       64 cells (h 0.500 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+iteration 1, A (points): 0 inconsistent landmarks kept unchanged (161s)
+   r_15.png: 64 / 64 cells kept
+   r_16_val.png: 64 / 64 cells kept
+   r_41_val.png: 64 / 64 cells kept
+   r_10_val.png: 64 / 64 cells kept
+   r_78.png: 64 / 64 cells kept
+iteration 1, B (poses) (63s)
+  [iteration 1] points: bbox diagonal median 1.0323 (p90 1.7321); 21 rows; GT inside 434 / 480
+  [iteration 1] r_15.png      512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.  0.2 0.2]; GT pose in a cell: True
+  [iteration 1] r_16_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 1] r_41_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 1] r_10_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 1] r_78.png      512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+iteration 2, A (points): 0 inconsistent landmarks kept unchanged (1842s)
+   r_15.png: 511 / 512 cells kept
+   r_16_val.png: 512 / 512 cells kept
+   r_41_val.png: 512 / 512 cells kept
+   r_10_val.png: 512 / 512 cells kept
+   r_78.png: 512 / 512 cells kept
+iteration 2, B (poses) (1074s)
+  [iteration 2] points: bbox diagonal median 1.0314 (p90 1.7321); 21 rows; GT inside 434 / 480
+  [iteration 2] r_15.png      511 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.  0.2 0.2]; GT pose in a cell: True
+  [iteration 2] r_16_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 2] r_41_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 2] r_10_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 2] r_78.png      512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+iteration 3, A (points): 0 inconsistent landmarks kept unchanged (1840s)
+   r_15.png: 509 / 511 cells kept
+   r_16_val.png: 512 / 512 cells kept
+   r_41_val.png: 512 / 512 cells kept
+   r_10_val.png: 512 / 512 cells kept
+   r_78.png: 512 / 512 cells kept
+iteration 3, B (poses) (429s)
+  [iteration 3] points: bbox diagonal median 1.0285 (p90 1.7321); 21 rows; GT inside 434 / 480; volume median 3.21e-04 (box version 1.96e-02, ratio 0.114)
+  [iteration 3] r_15.png      509 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.  0.2 0.2]; GT pose in a cell: True
+  [iteration 3] r_16_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 3] r_41_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 3] r_10_val.png  512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+  [iteration 3] r_78.png      512 cells (h 0.250 deg); w [-2. -2. -2.] .. [2. 2. 2.] deg; C size [0.2 0.2 0.2]; GT pose in a cell: True
+-> C:\Users\fatem\COLMAP\nerf_synthetic\airplane\set_based\results_joint_poly  (5415s)

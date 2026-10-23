@@ -1,0 +1,150 @@
+{
+  "eps_px": 3.0,
+  "scheme": "fixed",
+  "images": [
+    {
+      "image": "r_16_val.png",
+      "image_number": 3,
+      "landmarks_with_sets": 107,
+      "pose_set": {
+        "poses": 2801,
+        "w_lo_deg": [
+          -5.059732891360959,
+          -5.342592179776063,
+          -2.070275878906248
+        ],
+        "w_hi_deg": [
+          4.653300501278458,
+          5.752851384193798,
+          1.61395263671875
+        ],
+        "t_lo": [
+          1.2411967958557852,
+          -0.7357387219466675,
+          0.27633399855355956
+        ],
+        "t_hi": [
+          1.75919594746135,
+          -0.3103894255858138,
+          0.6563473911192622
+        ],
+        "C_lo": [
+          -1.6218710849804239,
+          -1.0177142853158458,
+          0.31001700980632135
+        ],
+        "C_hi": [
+          -1.1479189204240727,
+          -0.4814912833158244,
+          0.6575585747003339
+        ],
+        "gt_pose_exactly_feasible": true,
+        "gt_rotation_in_range": true,
+        "gt_centre_in_range": true,
+        "gt_w_rel_colmap_deg": [
+          -0.2509763642533517,
+          -0.11021201014831979,
+          0.017960573159432534
+        ],
+        "gt_t": [
+          1.5239334025498708,
+          -0.5204993188598167,
+          0.484058024109689
+        ]
+      },
+      "existing_landmarks": {
+        "count": 107,
+        "volume_after_over_before_median": 0.990475351418778,
+        "gt_in_set_before": 74,
+        "gt_in_set_after": 74,
+        "with_gt": 98
+      },
+      "new_landmarks_one_fixed_camera": {
+        "count": 84,
+        "with_gt": 80,
+        "gt_in_set": 61,
+        "box_diag_median": 0.12687276585123078
+      },
+      "new_landmarks_two_free_cameras": {
+        "count": 0,
+        "with_gt": 0,
+        "gt_in_set": 0,
+        "box_diag_median": null
+      },
+      "seconds": 429
+    },
+    {
+      "image": "r_41_val.png",
+      "image_number": 4,
+      "landmarks_with_sets": 145,
+      "pose_set": {
+        "poses": 2801,
+        "w_lo_deg": [
+          -6.484637408132407,
+          -6.931720875585365,
+          -2.0142333984374967
+        ],
+        "w_hi_deg": [
+          5.4263330696549605,
+          6.628980407626684,
+          1.6160278320312467
+        ],
+        "t_lo": [
+          0.8935201539339841,
+          0.19122751871421836,
+          0.16264773231269647
+        ],
+        "t_hi": [
+          1.5044425600654119,
+          0.7147888390784173,
+          0.4505183718350833
+        ],
+        "C_lo": [
+          -0.9904839412987809,
+          -1.3369139717240142,
+          0.15967360913220016
+        ],
+        "C_hi": [
+          -0.341339267059868,
+          -0.8151431363515019,
+          0.48055022601637104
+        ],
+        "gt_pose_exactly_feasible": true,
+        "gt_rotation_in_range": true,
+        "gt_centre_in_range": true,
+        "gt_w_rel_colmap_deg": [
+          -0.2980525098034093,
+          -0.10633627788086643,
+          -0.012192074194096899
+        ],
+        "gt_t": [
+          1.197731496730272,
+          0.4715073749659601,
+          0.29893991308852674
+        ]
+      },
+      "existing_landmarks": {
+        "count": 145,
+        "volume_after_over_before_median": 1.0,
+        "gt_in_set_before": 105,
+        "gt_in_set_after": 105,
+        "with_gt": 135
+      },
+      "new_landmarks_one_fixed_camera": {
+        "count": 30,
+        "with_gt": 29,
+        "gt_in_set": 24,
+        "box_diag_median": 0.15115732648102398
+      },
+      "new_landmarks_two_free_cameras": {
+        "count": 53,
+        "with_gt": 43,
+        "gt_in_set": 42,
+        "box_diag_median": 0.3756143657461916
+      },
+      "seconds": 498
+    }
+  ],
+  "units": "w: rotation offset from COLMAP's (deg); t = -R C and C in the gauge (camera 1 at the origin, x of camera 2's centre = 1)",
+  "seconds": 935
+}

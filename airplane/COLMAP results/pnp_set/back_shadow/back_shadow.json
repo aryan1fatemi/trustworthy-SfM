@@ -1,0 +1,20 @@
+{
+  "fixed_orientation": "COLMAP rotation",
+  "landmark": 8539,
+  "landmark_box_size": [
+    0.016947044019613118,
+    0.0191102357195721,
+    0.09971485730348917
+  ],
+  "distance_camera_to_landmark": 2.954339537192855,
+  "feasible_centre_size": [
+    0.06919732418193347,
+    0.04545699373548817,
+    0.0980874064916118
+  ],
+  "colmap_centre_in_this_shadow": true,
+  "colmap_centre_in_feasible_region": true,
+  "gt_centre_in_this_shadow": true,
+  "gt_centre_in_feasible_region": false,
+  "note": "the GT centre need not be feasible here: camera 3's orientation is fixed, not the true one"
+}

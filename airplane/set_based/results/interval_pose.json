@@ -1,0 +1,126 @@
+{
+  "eps_px": 3.0,
+  "image3": "r_16_val.png",
+  "initial_box": {
+    "w_half_deg": 8.0,
+    "c_half": 0.8
+  },
+  "leaf_deg": 1.0,
+  "boxes_tested": 3225,
+  "boxes_kept": 658,
+  "levels": [
+    {
+      "rotation_width_deg": 16.0,
+      "tested": 1,
+      "kept": 1
+    },
+    {
+      "rotation_width_deg": 16.0,
+      "tested": 2,
+      "kept": 2
+    },
+    {
+      "rotation_width_deg": 16.0,
+      "tested": 4,
+      "kept": 4
+    },
+    {
+      "rotation_width_deg": 8.0,
+      "tested": 8,
+      "kept": 8
+    },
+    {
+      "rotation_width_deg": 8.0,
+      "tested": 16,
+      "kept": 16
+    },
+    {
+      "rotation_width_deg": 8.0,
+      "tested": 32,
+      "kept": 32
+    },
+    {
+      "rotation_width_deg": 4.0,
+      "tested": 64,
+      "kept": 64
+    },
+    {
+      "rotation_width_deg": 4.0,
+      "tested": 128,
+      "kept": 125
+    },
+    {
+      "rotation_width_deg": 4.0,
+      "tested": 250,
+      "kept": 198
+    },
+    {
+      "rotation_width_deg": 2.0,
+      "tested": 396,
+      "kept": 241
+    },
+    {
+      "rotation_width_deg": 1.9999999999999996,
+      "tested": 482,
+      "kept": 366
+    },
+    {
+      "rotation_width_deg": 1.9999999999999996,
+      "tested": 732,
+      "kept": 555
+    },
+    {
+      "rotation_width_deg": 1.0000000000000007,
+      "tested": 1110,
+      "kept": 658
+    }
+  ],
+  "intervals": {
+    "w_x (deg)": [
+      -7.0,
+      7.0
+    ],
+    "w_y (deg)": [
+      -8.0,
+      8.0
+    ],
+    "w_z (deg)": [
+      -3.0000000000000004,
+      3.0000000000000004
+    ],
+    "c_x": [
+      -1.6835743571725472,
+      -1.0616331054895431
+    ],
+    "c_y": [
+      -1.1045066757735622,
+      -0.40726414816957773
+    ],
+    "c_z": [
+      0.2323346879763932,
+      0.7227622765141555
+    ]
+  },
+  "rotation_max_from_colmap_deg": 9.0,
+  "colmap_centre": [
+    -1.395687808351137,
+    -0.7852807568821467,
+    0.47574323189316553
+  ],
+  "gt": {
+    "w_rel_colmap_deg": [
+      -0.2509763642533517,
+      -0.11021201014831979,
+      0.017960573159432534
+    ],
+    "centre": [
+      -1.4085721728619804,
+      -0.7805235359549632,
+      0.4840580241096895
+    ],
+    "inside_a_kept_box": true
+  },
+  "touches_initial_box": true,
+  "seconds": 477,
+  "guarantee": "every pose that reprojects every landmark within eps, for some point of its set F_k, lies in the union of kept boxes (hence in these intervals), if it lies in the initial box"
+}

@@ -1,0 +1,64 @@
+{
+  "eps": 3.0,
+  "eps_f": 6.0,
+  "colmap_pose_feasible": true,
+  "Fk_diag_median": 0.20657333336611014,
+  "slice_at_colmap_diag_median": 0.07788210845910216,
+  "slice_over_Fk_diag_ratio_median": 0.37132054966425154,
+  "Fk_longest_side_median": 0.1996445721910356,
+  "slice_longest_side_median": 0.06625325458420228,
+  "sampled_poses": 4201,
+  "intersection_by_radius": [
+    {
+      "rotation_radius_deg": 0.1,
+      "poses": 1,
+      "landmarks_nonempty": 107,
+      "landmarks": 107,
+      "intersection_diag_median": 0.07788210845910216
+    },
+    {
+      "rotation_radius_deg": 0.25,
+      "poses": 1,
+      "landmarks_nonempty": 107,
+      "landmarks": 107,
+      "intersection_diag_median": 0.07788210845910216
+    },
+    {
+      "rotation_radius_deg": 0.5,
+      "poses": 1,
+      "landmarks_nonempty": 107,
+      "landmarks": 107,
+      "intersection_diag_median": 0.07788210845910216
+    },
+    {
+      "rotation_radius_deg": 1.0,
+      "poses": 1,
+      "landmarks_nonempty": 107,
+      "landmarks": 107,
+      "intersection_diag_median": 0.07788210845910216
+    },
+    {
+      "rotation_radius_deg": 2.0,
+      "poses": 624,
+      "landmarks_nonempty": 0,
+      "landmarks": 107,
+      "intersection_diag_median": null
+    },
+    {
+      "rotation_radius_deg": 4.0,
+      "poses": 2549,
+      "landmarks_nonempty": 0,
+      "landmarks": 107,
+      "intersection_diag_median": null
+    },
+    {
+      "rotation_radius_deg": 10.864090396355968,
+      "poses": 4201,
+      "landmarks_nonempty": 0,
+      "landmarks": 107,
+      "intersection_diag_median": null
+    }
+  ],
+  "note": "intersection over sampled poses is a superset of the intersection over all feasible poses",
+  "seconds": 74
+}

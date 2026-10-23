@@ -1,0 +1,9 @@
+{
+  "landmark_shown": 8539,
+  "slice_over_Fk_length_median": 0.3794767703943685,
+  "slice_over_Fk_length_p10_p90": [
+    0.2142987582864152,
+    0.44847135594496884
+  ],
+  "union_over_Fk_length_median": 0.8497600762701178
+}
