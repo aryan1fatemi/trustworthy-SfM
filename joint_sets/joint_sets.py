@@ -7,7 +7,7 @@ points3D.txt) and, optionally, colmap_log.txt (registration order) and NeRF-styl
 depth maps (for the ground-truth check). Cameras are taken in COLMAP's registration order; --window w uses
 cameras [w * (n_cams - 2), w * (n_cams - 2) + n_cams) of that order, so consecutive windows overlap by 2.
 
-Gauge: the first camera of the window is the origin (R = I, C = 0), the second camera's centre has x = 1;
+Gauge: the first camera of the window is the origin (R = I, C = 0), the second camera's centre has x = +-1 (sign kept);
 the ground truth is expressed by the same rule. Each camera's pose set is a list of rotation cells (rotation
 offset w from COLMAP's, half-width h) with a centre box; each landmark's set is a box.
  A. points from poses: each landmark is cut by every camera of its track (its pyramid through the +-eps
@@ -142,7 +142,7 @@ def _cell_test(task):
     A, bb = np.array(rows), np.array(b)
     cb = list(zip(clo, chi))
     if i == D["cam2"]:
-        cb[0] = (1.0, 1.0)                           # scale gauge: x of camera 2's centre = 1
+        cb[0] = (D["x2"], D["x2"])                   # scale gauge: x of camera 2's centre = +-1
     bounds = [(-delta, delta)] * 3 + cb + [tuple(x) for k in L for x in zip(*D["Xbox"][k])]
     A2 = np.hstack([A, -np.ones((len(A), 1))])
     c = np.zeros(n + 1)
@@ -218,7 +218,7 @@ def main():
     for i in cams[1:]:
         clo, chi = Cc[i] - a.c0, Cc[i] + a.c0
         if i == cam2:
-            clo[0] = chi[0] = 1.0
+            clo[0] = chi[0] = sc.x2
         cells[i] = [(np.array(w), h0, clo.copy(), chi.copy()) for w in itertools.product(grid, grid, grid)]
     gt = sc.load_gt()
     gt_pose, Xgt = {}, {}
@@ -271,7 +271,7 @@ def main():
                 Xbox[k] = bx
         print("iteration %d, A (points): %d inconsistent landmarks kept unchanged (%.0fs)" % (it, bad, time.time() - t), flush=True)
         t = time.time()
-        data = {"Xbox": Xbox, "seen": seen, "normals": normals, "Rc": Rc, "zmin": zmin, "cam2": cam2}
+        data = {"Xbox": Xbox, "seen": seen, "normals": normals, "Rc": Rc, "zmin": zmin, "cam2": cam2, "x2": sc.x2}
         with Pool(a.procs, initializer=_init, initargs=(data,)) as pool:
             for i in cams[1:]:
                 out = pool.map(_cell_test, [(i, w0, h, clo, chi) for w0, h, clo, chi in cells[i]], chunksize=1)

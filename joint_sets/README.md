@@ -83,6 +83,24 @@ sbatch run_known_rotation_gpu.sh /path/to/airplane 200 mult                     
   (`cuopt-cu13` for CUDA 13). The cuOpt backend has not been run yet (no GPU on the development machine).
 * Cost: 1 feasibility LP + 6 LPs per camera (+ 6 per point with `--point-ranges`). Output:
   `results/<dataset>_known_rotation_<n>cams.json` (centre ranges, COLMAP / GT inside, timings).
+* `--save-duals` (HiGHS only): each range LP's dual weights, summed per track, go to
+  `<...>.duals.jsonl` (one line per LP: `target`, `sense`, `value`, `tracks` = {landmark id: weight},
+  `bound_duals` = gauge dual, `certificate_residual`). Tracks with zero weight do not affect that bound.
+  Rerunning with the flag re-solves LPs whose duals are missing (the range checkpoint alone is not enough).
+* Rotation uncertainty (`--rot`): the fixed-rotation sets are conditional on COLMAP's rotations, which are
+  0.2-0.4 deg off (several pixels). With `--rot bounds.json`, every rotation becomes an unknown
+  R_i = R_hat_i Exp(delta_i), delta_i inside the camera's bounds, linearised in delta with a slack that covers the
+  linearisation error (`rot_slack`); +3 columns per camera, no extra rows. `--rot-ranges` also bounds each delta_i.
+  Outputs get a `_rot` suffix. The bounds file comes from `rotation_bounds.py` (small decoupled LPs, minutes on a
+  laptop), which needs a fixed-rotation run's centre ranges:
+
+```bash
+python rotation_bounds.py --scene /path/to/airplane --model "/path/to/airplane/COLMAP results fixedK" \
+    --centres results/airplane_COLMAP_results_fixedK_known_rotation_198cams.json --procs 8 --out results_rot
+python known_rotation.py --scene /path/to/airplane --model "/path/to/airplane/COLMAP results fixedK" \
+    --n-cams 200 --scheme mult --solver highs-ipm --procs 32 \
+    --rot results_rot/airplane_COLMAP_results_fixedK_rotation_bounds.json --rot-ranges --save-duals --out results
+```
 
 ## Notes
 

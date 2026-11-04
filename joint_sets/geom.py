@@ -3,7 +3,7 @@
 Conventions
     world -> camera:  q = R (X - C), depth q_3 > 0; pinhole after undistortion
     window of a detection: +-eps pixels around it, written as 4 faces n^T q <= 0 plus depth
-    gauge: camera 1 at the origin with R = I, x-coordinate of camera 2's centre = 1
+    gauge: camera 1 at the origin with R = I, x-coordinate of camera 2's centre = +-1 (sign kept, so the scene is never mirrored)
 """
 import os
 import re
@@ -88,7 +88,12 @@ class Scene:
         self.f = {i: (self.intr[i][0], self.intr[i][1]) for i in cams}
         R1, c1 = self.imgs[self.i1].R, self.imgs[self.i1].center
         self.R1, self.c1 = R1, c1
-        self.scale = (R1 @ (self.imgs[self.i2].center - c1))[0]
+        # scale gauge: |x of camera 2's centre| = 1 in camera 1's frame. The sign is kept (x2 = +-1): dividing by a
+        # negative offset would mirror the scene through camera 1 and put every point behind every camera.
+        off = R1 @ (self.imgs[self.i2].center - c1)
+        if abs(off[0]) < 0.1 * np.linalg.norm(off):
+            print("warning: camera 2's offset from camera 1 is mostly off the x axis (%s); the scale gauge is weak" % np.round(off, 3))
+        self.scale, self.x2 = abs(off[0]), float(np.sign(off[0]))
         self.det, self.px = {}, {}
         for i in cams:
             d, q = {}, {}
@@ -144,9 +149,9 @@ class Scene:
         return gt
 
     def gt_in_gauge(self, gt, cams, landmarks, disc=0.02):
-        """GT poses {i: (R, C)} and GT points {k: X} in the gauge rule (camera 1 origin, x of camera 2 = 1)."""
+        """GT poses {i: (R, C)} and GT points {k: X} in the gauge rule (camera 1 origin, |x of camera 2| = 1)."""
         g1, g2 = gt[self.imgs[self.i1].name], gt[self.imgs[self.i2].name]
-        sc = (g1["R"] @ (g2["c"] - g1["c"]))[0]
+        sc = abs((g1["R"] @ (g2["c"] - g1["c"]))[0])
         poses = {i: (gt[self.imgs[i].name]["R"] @ g1["R"].T, g1["R"] @ (gt[self.imgs[i].name]["c"] - g1["c"]) / sc)
                  for i in cams}
         lifted = {}

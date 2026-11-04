@@ -1,0 +1,133 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\newtheorem{proposition}{Proposition}
+\newcommand{\R}{\mathbb{R}}
+\title{From $\ell_\infty$ windows to probabilistic coverage:\\ estimating $\sigma$ and a per-image error ellipsoid}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Deterministic set (current method)}
+Camera $i$ has rotation $R_i$, centre $C_i$ and focal length $f$, principal point $(c_x,c_y)$; point $k$ is $X_k$.
+In camera coordinates $v_{ik}=R_i(X_k-C_i)$, and the predicted pixel is
+\begin{equation}
+  \hat y_{ik}=\Bigl(f\,\frac{v_{ik,x}}{v_{ik,z}}+c_x,\ \ f\,\frac{v_{ik,y}}{v_{ik,z}}+c_y\Bigr).
+\end{equation}
+$y_{ik}$ is the SIFT detection of point $k$ in image $i$. With $\theta=(R_i,C_i)_i$, the detection error at the truth is
+$e_{ik}=y_{ik}-\hat y_{ik}(\theta^*,X^*)\in\R^2$, and for windows $\epsilon_{ik}$ the feasible set is
+\begin{equation}
+  \mathcal F(\epsilon)=\bigl\{(\theta,X):\ \|y_{ik}-\hat y_{ik}(\theta,X)\|_\infty\le\epsilon_{ik}\ \ \text{for every detection}\bigr\}.
+\end{equation}
+With known rotations each window is a pyramid with apex $C_i$: 4 linear rows per detection, plus a depth row.
+
+\begin{proposition}[deterministic coverage]
+If $\|e_{ik}\|_\infty\le\epsilon_{ik}$ for every detection, then $(\theta^*,X^*)\in\mathcal F(\epsilon)$ (and conversely,
+since every row is evaluated at $X^*$). For the poses alone, $\theta^*$ is in the projection of $\mathcal F(\epsilon)$
+iff for every point $k$ there is \emph{some} $X_k$ (not necessarily $X_k^*$) satisfying all of its rows at $\theta^*$.
+\end{proposition}
+
+\section{The probabilistic problem}
+The errors $e_{ik}$ are random (image noise, detector). We do not fix their distribution; we only use moments that can be
+estimated without ground truth (Section~3). The goal is a set $\Theta$ computed without ground truth such that
+\begin{equation}
+  \Pr(\theta^*\in\Theta)\ \ge\ 1-\alpha .
+\end{equation}
+
+\paragraph{Events.} An \emph{event} is a statement about the errors that is either true or false for a given set of
+images. Choose an event $\mathsf E$ such that \emph{whenever $\mathsf E$ is true, $\theta^*\in\Theta$} (deterministic
+step, as in the proposition). Then $\Pr(\theta^*\in\Theta)\ge\Pr(\mathsf E)$, and it remains to bound $\Pr(\mathsf E)$.
+For the $\ell_\infty$ set, $\mathsf E$ is ``every coordinate of every $e_{ik}$ is at most $\epsilon_{ik}$''.
+If $\mathsf E=\mathsf E_1\cap\dots\cap\mathsf E_m$ (all of $\mathsf E_1,\dots,\mathsf E_m$ true), the union bound gives
+\begin{equation}
+  \Pr(\mathsf E)\ \ge\ 1-\sum_{j}\Pr(\mathsf E_j\ \text{false}),
+  \label{eq:union}
+\end{equation}
+with no independence assumption between the $\mathsf E_j$.
+
+\paragraph{Assumptions.} Correct correspondences (gross mismatches removed); known rotations (or a separate rotation bound).
+
+\section{Estimating $\sigma$ without ground truth}
+\paragraph{Which error matters.} Part of the errors of point $k$ is consistent with a shifted point $X_k^*+\delta_k$
+(viewpoint-independent detector bias). By the proposition this part is absorbed by the free $X_k$ and does not affect
+pose coverage. COLMAP's residual absorbs more than that (the detection is part of the fit), so it underestimates.
+
+\paragraph{Leave-one-out residual.} With COLMAP's poses $\hat\theta$, re-triangulate point $k$ without image $i$
+(least squares over its other detections, giving $\hat X_{k,-i}$) and measure
+$r_{ik}=y_{ik}-\hat y_{ik}(\hat\theta,\hat X_{k,-i})$. Per coordinate, with $M$ detections,
+\begin{equation}
+  \hat\sigma^2=\frac{1}{2M}\sum_{ik}\|r_{ik}\|^2,\qquad
+  \hat\kappa=\frac{1}{2M\hat\sigma^4}\sum_{ik}\bigl(r_{ik,u}^4+r_{ik,v}^4\bigr)\quad(\kappa=3\text{ for a Gaussian}).
+\end{equation}
+
+\paragraph{30-view chair spiral} (RMS per coordinate; ground truth only for evaluation):
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+ & COLMAP residual & leave-one-out (no GT) & error to mesh point (GT)\\
+\midrule
+all points & 0.41 px & 0.62 px & 0.85 px\\
+points seen in 3 views & 0.32 px & 0.73 px & 0.73 px\\
+points seen in $\ge 9$ views & 0.55 px & 0.63 px & 1.09 px\\
+\bottomrule
+\end{tabular}
+\end{center}
+$\hat\kappa=54.6$: the tails are far heavier than Gaussian.
+
+\section{Why not a region per detection}
+For a 2D error, the region $\mathcal R=\{e\in\R^2:\ e^\top S^{-1}e\le r^2\}$ (here $e$ stands for any candidate error
+vector; with $S=I$ it is the disk $e_u^2+e_v^2\le r^2$) reaches $\max_{e\in\mathcal R}e_u=r\sqrt{S_{uu}}$ along $u$ and
+$r\sqrt{S_{vv}}$ along $v$ (from $\max_{e\in\mathcal R}c^\top e=r\sqrt{c^\top S c}$). It fits inside the window
+$[-\epsilon,\epsilon]^2$ iff $r\le\epsilon/\sqrt{\max(S_{uu},S_{vv})}$.
+
+The shape alone carries no probability; $\sigma$ converts it: for a Gaussian error,
+$\Pr(e\notin\mathcal R)=\exp(-r^2/2\sigma^2)$. But with $M=20\,825$ detections, \eqref{eq:union} needs each region
+to fail with probability $\approx\alpha/M\approx2\times10^{-6}$: that is the far tail, where the data are not Gaussian
+($\hat\kappa=54.6$). A distribution-free bound does not help: Chebyshev, $\Pr(|e_u|>t)\le\sigma^2/t^2$, needs
+$t\approx700\sigma$. And at equal probability the disk saves only 14\% of the square's area.
+\emph{Per-detection regions therefore cannot give a useful guarantee.}
+
+\section{Per-image ellipsoid}
+For image $i$ with $n_i$ detections ($d_i=2n_i$ coordinates), define the random variable (the sum of squared errors of the image, i.e.\ the squared
+Euclidean norm of its stacked error vector) and the event
+\begin{equation}
+  S_i=\sum_k\|e_{ik}\|^2,\qquad \mathsf E_i=\{S_i\le q_i\}.
+\end{equation}
+Its mean is $d_i\sigma^2$ and, if the squared coordinates are uncorrelated, its variance is $d_i\sigma^4(\kappa-1)$.
+Only these two moments are needed, not the tail of a single detection.
+
+\paragraph{Thresholds} (risk $\alpha_i$ per image, $\sum_i\alpha_i\le\alpha$):
+\begin{itemize}
+\item Cantelli (one-sided Chebyshev): $\Pr(S-\mu\ge t)\le s^2/(s^2+t^2)$ for mean $\mu$ and standard deviation $s$.
+  Chebyshev is the two-sided version, $\Pr(|S-\mu|\ge t)\le s^2/t^2$; Cantelli is never worse for a one-sided event,
+  and the two nearly coincide for small $\alpha$. Setting the bound to $\alpha_i$:
+  $q_i=\hat\sigma^2\bigl(d_i+\sqrt{d_i(\hat\kappa-1)}\,\sqrt{(1-\alpha_i)/\alpha_i}\bigr)$.
+\item Normal approximation (central limit theorem, $d_i$ in the hundreds):
+  $q_i=\hat\sigma^2\bigl(d_i+z_{1-\alpha_i}\sqrt{d_i(\hat\kappa-1)}\bigr)$; for $\kappa=3$ this is the normal approximation of $\chi^2_{d_i}$.
+\end{itemize}
+
+\paragraph{Pose coverage.} By the proposition, $\theta^*$ is covered if \emph{some} points $X$ satisfy every
+image's constraint at $\theta^*$. A witness is the least-squares point under the true cameras, so the relevant energy is
+$S_i$ evaluated at that point.
+
+\paragraph{Check on the 30-view spiral} ($\alpha=0.05$ over 30 images, $\hat\sigma=0.622$\,px and $\hat\kappa=54.6$
+from leave-one-out residuals, detections flagged as mismatches removed):
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+images with $S_i\le q_i$ & normal approx. & Cantelli & Gaussian $\chi^2$\\
+\midrule
+pose-relevant error (least-squares point, true cameras) & 30/30 & 30/30 & 30/30\\
+error to the mesh point $X^*$ & 9/30 & 30/30 & 0/30\\
+\bottomrule
+\end{tabular}
+\end{center}
+Median $S_i/(d_i\hat\sigma^2)$: 0.41 for the pose-relevant error, 2.0 for the mesh point.
+
+\paragraph{As a convex constraint.} The depth-weighted error $v_{ik,z}\,(y_{ik}-\hat y_{ik})=A_{ik}v_{ik}$ is linear in
+$(X_k,C_i)$. If $v_{ik,z}\le\bar z_{ik}$ (depth upper bound, e.g.\ from the box set), then
+$\|A_{ik}v_{ik}\|/\bar z_{ik}\le\|y_{ik}-\hat y_{ik}\|$, so the truth satisfies the second-order-cone constraint
+$\sum_k\|A_{ik}v_{ik}\|^2/\bar z_{ik}^{\,2}\le q_i$: an outer relaxation, no linearisation. Intersected with the box set,
+the risk $\alpha$ is split between the two events.
+
+\end{document}
