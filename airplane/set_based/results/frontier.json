@@ -1,0 +1,130 @@
+{
+  "eps_px": 3.0,
+  "image3": "r_16_val.png",
+  "z_bar": 3.045139570280361,
+  "samples_per_radius": 200,
+  "frontier": [
+    {
+      "radius_deg": 0.0,
+      "centre_radius": 0.0,
+      "poses_in_ball": 1,
+      "landmarks_nonempty": 107,
+      "volume_ratio_mean": 0.4076373652844918,
+      "volume_ratio_median": 0.4049273120792775
+    },
+    {
+      "radius_deg": 0.05,
+      "centre_radius": 0.002657385584207878,
+      "poses_in_ball": 200,
+      "landmarks_nonempty": 103,
+      "volume_ratio_mean": 0.08421762089449362,
+      "volume_ratio_median": 0.08632994713267353
+    },
+    {
+      "radius_deg": 0.1,
+      "centre_radius": 0.005314771168415756,
+      "poses_in_ball": 327,
+      "landmarks_nonempty": 102,
+      "volume_ratio_mean": 0.04340229438831523,
+      "volume_ratio_median": 0.040692915597198884
+    },
+    {
+      "radius_deg": 0.2,
+      "centre_radius": 0.010629542336831513,
+      "poses_in_ball": 387,
+      "landmarks_nonempty": 99,
+      "volume_ratio_mean": 0.025724014347065116,
+      "volume_ratio_median": 0.021334748921289143
+    },
+    {
+      "radius_deg": 0.3,
+      "centre_radius": 0.01594431350524727,
+      "poses_in_ball": 417,
+      "landmarks_nonempty": 96,
+      "volume_ratio_mean": 0.019971642253006607,
+      "volume_ratio_median": 0.012133433647601418
+    },
+    {
+      "radius_deg": 0.5,
+      "centre_radius": 0.026573855842078782,
+      "poses_in_ball": 430,
+      "landmarks_nonempty": 74,
+      "volume_ratio_mean": 0.016295343979880885,
+      "volume_ratio_median": 0.004830170890783968
+    },
+    {
+      "radius_deg": 0.75,
+      "centre_radius": 0.03986078376311818,
+      "poses_in_ball": 447,
+      "landmarks_nonempty": 43,
+      "volume_ratio_mean": 0.010482282346788446,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 1.0,
+      "centre_radius": 0.053147711684157564,
+      "poses_in_ball": 548,
+      "landmarks_nonempty": 24,
+      "volume_ratio_mean": 0.006952683411156302,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 1.5,
+      "centre_radius": 0.07972156752623635,
+      "poses_in_ball": 1223,
+      "landmarks_nonempty": 11,
+      "volume_ratio_mean": 0.0035288522245840916,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 2.0,
+      "centre_radius": 0.10629542336831513,
+      "poses_in_ball": 2091,
+      "landmarks_nonempty": 9,
+      "volume_ratio_mean": 0.0029248890088625456,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 3.0,
+      "centre_radius": 0.1594431350524727,
+      "poses_in_ball": 3553,
+      "landmarks_nonempty": 7,
+      "volume_ratio_mean": 0.0016931340990212196,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 4.0,
+      "centre_radius": 0.21259084673663026,
+      "poses_in_ball": 4145,
+      "landmarks_nonempty": 7,
+      "volume_ratio_mean": 0.0012771239058541946,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 5.0,
+      "centre_radius": 0.2657385584207878,
+      "poses_in_ball": 4425,
+      "landmarks_nonempty": 7,
+      "volume_ratio_mean": 0.001261454702572096,
+      "volume_ratio_median": 0.0
+    },
+    {
+      "radius_deg": 6.0,
+      "centre_radius": 0.3188862701049454,
+      "poses_in_ball": 4628,
+      "landmarks_nonempty": 7,
+      "volume_ratio_mean": 0.0009619448307277593,
+      "volume_ratio_median": 0.0
+    }
+  ],
+  "knee": {
+    "radius_deg": 0.2,
+    "centre_radius": 0.010629542336831513,
+    "poses_in_ball": 387,
+    "landmarks_nonempty": 99,
+    "volume_ratio_mean": 0.025724014347065116,
+    "volume_ratio_median": 0.021334748921289143
+  },
+  "note": "sampled balls: intersections are upper bounds on the intersection over the continuous ball",
+  "seconds": 57
+}

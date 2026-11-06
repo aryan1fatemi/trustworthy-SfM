@@ -1,0 +1,32 @@
+30 cameras, 1463 points, 53940 rows, 4476 unknowns, 318600 nonzeros (built in 1s)
+feasibility: min violation 0.00e+00 (Optimization terminated successfully. (HiGHS Status 7: Optimal)), 2.1s; COLMAP's solution violates by -4.47e-04
+  r_15.png       centre size [0.     0.0244 0.1412]  (COLMAP inside: True; GT inside: True)  4.0s per coordinate
+  r_16_val.png   centre size [0.097  0.0604 0.1375]  (COLMAP inside: True; GT inside: True)  9.2s per coordinate
+  r_41_val.png   centre size [0.0518 0.0709 0.1458]  (COLMAP inside: True; GT inside: True)  5.7s per coordinate
+  r_10_val.png   centre size [0.0406 0.0805 0.1441]  (COLMAP inside: True; GT inside: True)  4.9s per coordinate
+  r_78.png       centre size [0.0599 0.0911 0.1481]  (COLMAP inside: True; GT inside: True)  5.9s per coordinate
+  r_58.png       centre size [0.076  0.1039 0.1434]  (COLMAP inside: True; GT inside: True)  9.4s per coordinate
+  r_26.png       centre size [0.0953 0.0996 0.146 ]  (COLMAP inside: True; GT inside: True)  6.0s per coordinate
+  r_59.png       centre size [0.105  0.1017 0.1516]  (COLMAP inside: True; GT inside: True)  5.3s per coordinate
+  r_79.png       centre size [0.0958 0.1011 0.1449]  (COLMAP inside: True; GT inside: True)  5.8s per coordinate
+  r_6.png        centre size [0.0944 0.1037 0.1435]  (COLMAP inside: True; GT inside: True)  5.5s per coordinate
+  r_5.png        centre size [0.1053 0.1172 0.1358]  (COLMAP inside: True; GT inside: True)  4.9s per coordinate
+  r_45.png       centre size [0.0626 0.1226 0.135 ]  (COLMAP inside: True; GT inside: True)  4.4s per coordinate
+  r_47.png       centre size [0.0383 0.1062 0.1384]  (COLMAP inside: True; GT inside: True)  4.7s per coordinate
+  r_26_val.png   centre size [0.0281 0.0966 0.1452]  (COLMAP inside: True; GT inside: True)  5.2s per coordinate
+  r_13.png       centre size [0.0277 0.1132 0.1497]  (COLMAP inside: True; GT inside: False)  4.9s per coordinate
+  r_97.png       centre size [0.0264 0.1087 0.1494]  (COLMAP inside: True; GT inside: True)  4.9s per coordinate
+  r_99.png       centre size [0.0256 0.1133 0.1502]  (COLMAP inside: True; GT inside: False)  5.4s per coordinate
+  r_61.png       centre size [0.0355 0.1113 0.1584]  (COLMAP inside: True; GT inside: True)  5.0s per coordinate
+  r_42_val.png   centre size [0.029  0.1279 0.1541]  (COLMAP inside: True; GT inside: True)  5.2s per coordinate
+  r_14_val.png   centre size [0.0294 0.1319 0.1544]  (COLMAP inside: True; GT inside: False)  4.9s per coordinate
+  r_89.png       centre size [0.0269 0.1495 0.1385]  (COLMAP inside: True; GT inside: False)  4.6s per coordinate
+  r_87.png       centre size [0.0146 0.1238 0.1377]  (COLMAP inside: True; GT inside: True)  4.8s per coordinate
+  r_49.png       centre size [0.017  0.1302 0.137 ]  (COLMAP inside: True; GT inside: False)  5.0s per coordinate
+  r_2.png        centre size [0.0641 0.1274 0.1386]  (COLMAP inside: True; GT inside: True)  5.2s per coordinate
+  r_52_val.png   centre size [0.0677 0.1382 0.1275]  (COLMAP inside: True; GT inside: True)  6.0s per coordinate
+  r_74_val.png   centre size [0.0637 0.1286 0.1367]  (COLMAP inside: True; GT inside: True)  5.6s per coordinate
+  r_51.png       centre size [0.0742 0.1417 0.1403]  (COLMAP inside: True; GT inside: True)  4.9s per coordinate
+  r_68.png       centre size [0.0779 0.1333 0.1278]  (COLMAP inside: True; GT inside: True)  4.8s per coordinate
+  r_9_val.png    centre size [0.0794 0.1424 0.1391]  (COLMAP inside: True; GT inside: True)  4.9s per coordinate
+-> results\airplane_known_rotation_30cams.json  (773s)

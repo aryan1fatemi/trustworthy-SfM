@@ -1,0 +1,21 @@
+{
+  "landmarks": 107,
+  "poses": 4201,
+  "poses_per_class": {
+    "rot-half, centre-mean (interior)": 300,
+    "rot-half, centre-extreme": 1800,
+    "rot-boundary, centre-mean": 300,
+    "rot-boundary, centre-extreme": 1800
+  },
+  "landmarks_with_a_common_point": {
+    "all": 7,
+    "rot-half, centre-mean (interior)": 48,
+    "rot-half, centre-extreme": 9,
+    "rot-boundary, centre-mean": 7,
+    "rot-boundary, centre-extreme": 7
+  },
+  "best_point_coverage_median": 0.8818635607321131,
+  "best_point_coverage_p10": 0.5720465890183029,
+  "pair_overlap_fraction_median": 0.9663732935401619,
+  "note": "coverage and pair overlap along the set's long axis (1-D); common points exact (3-D LP)"
+}

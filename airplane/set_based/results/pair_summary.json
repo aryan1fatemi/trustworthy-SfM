@@ -1,0 +1,16 @@
+{
+  "eps_px": 3.0,
+  "pair": [
+    "r_82.png",
+    "r_15.png"
+  ],
+  "z_min": 0.002863178655985809,
+  "landmarks_common": 196,
+  "empty": 1,
+  "unbounded": 0,
+  "bounded": 195,
+  "box_diag_median": 0.09951310481295499,
+  "long_axis_length_median": 0.0978237422791346,
+  "colmap_point_inside_fraction": 0.9538461538461539,
+  "units": "gauge: camera 1 at the origin, x of camera 2's centre = 1"
+}

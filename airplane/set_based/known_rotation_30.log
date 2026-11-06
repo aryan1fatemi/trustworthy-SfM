@@ -1,0 +1,4 @@
+30 cameras, 1463 points, 53940 rows, 4476 unknowns, 318600 nonzeros (built in 1s)
+feasibility: min violation 4.93e-04 (Optimization terminated successfully. (HiGHS Status 7: Optimal)), 8.8s; COLMAP's solution violates by 2.26e-03
+F(eps | R) is empty at these rotations: no ranges (try --scheme mult or a larger --eps)
+-> results\airplane_known_rotation_30cams.json  (13s)
