@@ -3,3 +3,7 @@ lego_work/src/
 __pycache__/
 .DS_Store
 bugatti/*.blend
+lego_work/lego_canon/
+bugatti/*.obj
+lego_work/translation_*.csv
+lego_work/run_colmap_lego.out
