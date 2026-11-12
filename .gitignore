@@ -7,3 +7,11 @@ lego_work/lego_canon/
 bugatti/*.obj
 lego_work/translation_*.csv
 lego_work/run_colmap_lego.out
+lego_work/out_lego30/
+lego_work/lego30/
+lego_work/hpg_pkg/
+lego_work/hpg_pkg.zip
+lego_work/*.out
+lego_work/joint_smoke*
+lego_work/joint_probe*
+lego_work/joint30_probe*

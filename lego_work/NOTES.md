@@ -79,3 +79,24 @@
 ## Files
 - Tracked: scripts (render_lego.py, convert_lego.py, run_colmap_lego.sh, check_output.py, compare_gray.py, pose_check.py, diag_*.py, check_obj.py), logs, NOTES.md.
 - Not tracked: lego_gt/, lego_canon/, src/.
+## joint_sets known_rotation on LEGO (2026-11-11)
+- Dataset: lego30 = first 30 views of lego_canon (same render, seed 0). COLMAP fixedK registered only 22 of 30 and split them into two models (sparse_fixedK/0 and /1); the larger (22 cams) was used.
+- Bug found: geom.registration_order uses re.match on "Registering image #...", but COLMAP 3.11.1 prefixes every log line, so it found only the initial pair (2 cameras). Patched copy in js_local/ uses re.search (and "in l2" instead of startswith). To report to Ariyan.
+- Run: HiPerGator, account abe6165, 16 CPUs, 6m43s, MaxRSS 2.3 GB. Settings: --scheme mult, eps 3, highs-ipm, --point-ranges 500 --point-seed 0.
+- Feasible: min violation 0; COLMAP's own solution violates by -1.93e-03, so "COLMAP inside: True" everywhere is automatic, not evidence.
+- Cameras: true centre inside its box for 18 / 21 boxed cameras (3.png, 9.png, 25.png outside; camera 1 is the gauge origin, no box). Median centre box diagonal 0.2305; per-axis sizes 0.02-0.26 in baseline units.
+- Points: 500 sampled, 0 unsolved; GT inside 465 / 489 (11 had no GT from the depth lookup). Median box diagonal 0.3335; median COLMAP point error 0.0655.
+- Output: lego_work/out_lego30/ (not committed).
+- Open: are the 3 camera misses due to the fixed rotations (README: COLMAP rotations 0.2-0.4 deg off)? Next test: rotation_bounds.py then known_rotation.py --rot.
+
+## Rotation errors on lego30 (2026-11-11)
+- rot_error.py measures the true per-camera rotation error (R_hat^T R_gt via geom.gt_in_gauge, same formula as known_rotation.py's --rot-ranges check).
+- 22 cameras: median 0.217 deg, mean 0.366. 7.png = 0.0000 (gauge origin, R fixed to identity).
+- The 3 cameras whose centre boxes missed GT are exactly the 3 with the largest rotation errors: 25.png 3.244, 3.png 0.722, 9.png 0.606. All other 19 are <= 0.363.
+- So the camera misses line up with the fixed-rotation assumption (README: COLMAP rotations 0.2-0.4 deg off). This is correlation on 22 cameras, not proof; the --rot run is the test.
+- 25.png is an outlier: 9x the median rotation error, and also COLMAP's worst camera by position error (0.160 vs 0.078 for the next worst).
+- For rotation_bounds.py, --rho0 must exceed the true max (3.244 here). Ariyan's chair used --rho0 2.0 with max 0.71. Proposed 4.0; asked him to confirm.
+
+## Detail on the 22-cam run's misses
+- Cameras: each of the 3 misses is outside in exactly one axis (3.png y by 0.0147, 9.png x by 0.0174, 25.png y by 0.1096), and in each case COLMAP's own error in that axis exceeds the box half-width.
+- Points: of the 24 misses, 19 are 2- or 3-view tracks. The 5 largest (ids 28, 2155, 2109, 2243, 1368; outside by 0.23-0.74) are all 2-view with GT 0.41-0.88 from COLMAP's own point, so those look like bad depth-lifted GT rather than bad boxes. 13 of the 24 miss by under 0.02.
